@@ -1,0 +1,4 @@
+<h1>Welcome to Hogwarts</h1>
+<% @houses.each do |house| %>
+  <%= link_to(house.name, "/#{house}/students") %>
+<% end %>
